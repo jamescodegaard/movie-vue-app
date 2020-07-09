@@ -5,7 +5,7 @@
     <div v-for="movie in movies">
       <h3>{{ movie.title }}</h3>
       <p>{{ movie.year }}</p>
-      <p>{{ movie.description }}</p>
+      <router-link v-bind:to="`/movies/${movie.id}`">More Info</router-link>
     </div>
   </div>
 </template>
