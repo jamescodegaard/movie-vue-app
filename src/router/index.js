@@ -5,6 +5,8 @@ import About from '../views/About.vue';
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
+import MoviesIndex from "../views/MoviesIndex.vue";
+import MoviesCreate from "../views/MoviesNew.vue";
 
 Vue.use(VueRouter);
 
@@ -33,6 +35,16 @@ const routes = [
     path: "/logout",
     name: "logout",
     component: Logout
+  },
+  {
+    path: "/movies",
+    name: "movies-index",
+    component: MoviesIndex
+  },
+  {
+    path: "/movies/new",
+    name: "movies-new",
+    component: MoviesCreate
   }
 ];
 
